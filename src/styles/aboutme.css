@@ -1,0 +1,15 @@
+.heroAbout {
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/images/halftoneSara.png") top right;
+    background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: top right; 
+
+    font-family: Orbitron;
+  }
+
+  @font-face {
+    font-family:Orbitron;
+    src: url('../assets/fonts/Orbitron-Bold.ttf') format('ttf');
+  }
