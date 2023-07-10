@@ -27,6 +27,13 @@
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+@font-face {
+  font-family:Caprasimo-Regular;
+  src: url('./assets/fonts/Caprasimo-Regular.ttf')format('tff');
+}
+
+
+
 .main-links {
   position:relative;
   top: 250px;

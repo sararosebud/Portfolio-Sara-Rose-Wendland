@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import React, { Component } from "react";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../assets/images/logo.png";
-import Image from "react-bootstrap/Image";
-import Figure from "react-bootstrap/Figure";
+// import logo from "../assets/images/logo.png";
+// import Image from "react-bootstrap/Image";
+// import Figure from "react-bootstrap/Figure";
 import circleLogo from "../assets/images/circleLogo.png";
-import { ToastHeader } from "react-bootstrap";
+
 
 function Header() {
   return (
@@ -30,7 +30,7 @@ function Header() {
                 <Nav.Link href="#" className="nav-link">
                   Home
                 </Nav.Link>
-                <Nav.Link href="#" className="nav-link">
+                <Nav.Link href="/AboutMe" className="nav-link">
                   About
                 </Nav.Link>
                 <Nav.Link href="#" className="nav-link">
@@ -47,7 +47,7 @@ function Header() {
             </Navbar.Collapse>
           </Navbar>
           <div className="hero-heading">
-            <h1>Sara Rose Wendland</h1>
+            <h1> ... </h1>
             <div className="hero-sub-title mt-5">
               <a href="#" className="text-white">
                 <i className="fa fa-play-circle"></i>Stacker.
