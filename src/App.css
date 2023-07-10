@@ -2,6 +2,8 @@
 
 @import 'animate.css';
 
+@import 'normalize';
+
 @font-face {
   font-family:SourceCodeProMedium;
   src: url('./assets/fonts/SourceCodePro-Medium.ttf') format('tff');
@@ -23,11 +25,237 @@
   font-family:SourceCodeProVariableFont;
   src: url('./assets/fonts/SourceCodePro-VariableFont_wght.ttf') format('tff');
 }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.main-links {
+  position:relative;
+  top: 250px;
+  font-family: 'Nexa Bold', sans-serif !important;
+  color: #fff;
+}
+
+.main-links h1 {
+  position: relative;
+  margin-bottom: 0px !important;
+  font-weight: 600;
+  text-transform: uppercase;
+margin-top: 200px;
+}
+.has-text-centered {
+  text-align: center !important;
+}
+
+.navbar {
+  padding-top: 80px;
+}
+
+
+
+.nav-link {
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  min-width: 88px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background: rgba(12, 0, 0, 0.1);
+  box-sizing: border-box;
+  position: relative;
+  color: #f4f4f4;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+}
+
+.navbar-brand {
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #f4f4f4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.hero {
+  height: 400px;
+  background-image: linear-gradient(to top, rgb(226, 206, 140), rgba(255, 255, 255, 0)), url(/public/mountain.png);
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.hero-heading {
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 1.3;
+  font-weight: 300;
+  font-family: "Roboto Slab", sans-serif;
+  padding: 0 8px;
+  max-width: 300px;
+  width: 100%;
+  z-index: 5;
+}
+
+.hero-sub-title {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero-sub-title > a:hover {
+  color: #f4f4f4;
+}
+
+/* 
+=================================
+--------- Media Query -----------
+===============================*/
+
+/*==============================
+---------- Mobile View  --------
+==============================*/
+@media (min-width: 350px) and (max-width: 1024px) {
+  .navbar {
+  padding-top: 20px;
+}
+  
+  .social {
+    text-align: center;
+  }
+  .social {
+    .fa {
+      color: #807cb9 !important;
+    }
+    .fa-facebook-square {
+      margin-left: 0 !important;
+    }
+  }
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 20px;
+    z-index: 55;
+  }
+
+  nav {
+    ul li > a {
+      color: #807cb9 !important;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+/* Mobile -btn */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-dark .navbar-toggler {
+  border-color: transparent !important;
+  &:focus {
+    border-color: transparent !important;
+  }
+}
+
+/* ========================
+-------- Desktop ----------
+=========================*/
+
+@media (min-width: 1200px) {
+  .navbar {
+    width: 1140px;
+    padding-left: 120px;
+  }
+
+  .text-white {
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.social {
+  .fa {
+    font-size: 20px;
+    min-width: 44px;
+    line-height: 36px;
+    color: #f4f4f4;
+  }
+
+  .fa-facebook-square {
+    margin-left: 50px;
+  }
+
+  .fa:hover {
+    cursor: pointer;
+    color: #f4f4f4;
+    opacity: 0.7;
+    text-decoration: none;
+  }
+}
+
+
 
 input, 
 textarea {
-  font-family: 'SourceCodeProMedium';
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+body {
+  background-color: #e4cd88;
+  color: #7a410b;
+  padding: 0;
+  font-family: SourceCodeProBold;
+  text-align: center;
+}
+
+
+
+
+
+.bg-body-image { 
+background-image: url(/public/mountain.png);
+background-size: "cover";
+height: 25vh;
+font-size:30px;
+background-repeat:no-repeat; 
+position: relative;
+} 
+
+/* .nav-text {
+  position: 'absolute';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: 'transparent';
+  justify-content: 'center';
+
+} */
+
+/* .custom-nav {
+background: scroll;
+background-image: url(/navmontain.png);
+background-size: "cover";
+height: 25vh;
+margin-top: auto;
+margin-left: 0%;
+font-size:30px;
+background-repeat:no-repeat; 
+text-align: bottom;
+
+} */
+;
 
 
 
@@ -54,7 +282,7 @@ textarea {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(251, 252, 250);
 }
 
 .App-link {
