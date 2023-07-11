@@ -5,10 +5,11 @@
 import Header from './components/Header';
 // import Project from './components/Project';
 import AboutMe from './components/AboutMe'
-
-
+import ContactForm from './components/ContactForm'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 import './custom.scss';
+import "animate.css/animate.min.css";
 
 
 
@@ -22,9 +23,12 @@ function App() {
     <div>
       <Header />
       <AboutMe />
+      <ContactForm />
       
       
     </div>
+
+    
    
   )
 }

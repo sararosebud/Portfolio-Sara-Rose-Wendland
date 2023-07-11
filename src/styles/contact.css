@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+@font-face {
+  font-family: 'Orbitron', sans-serif;
+  src: url('../assets/fonts/Orbitron-Bold.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Source Code Pro', monospace;
+    src: url('../assets/fonts/SourceCodePro-Medium.ttf') format('ttf');
+   }
+
+.form-font {
+    font-family: 'Orbitron', sans-serif; 
+}
+
+
+
+input, 
+textarea {
+  font-family: 'Orbitron', sans-serif; 
+}
+
+body {
+  background-color: #e4cd88;
+  color: #7a410b;
+  padding: 20;
+  font-family: 'SourceCodeProBold';
+  text-align: center;
+}
+
+.btn-port {
+    background-color: #dba916;
+}

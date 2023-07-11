@@ -8,6 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 // import Image from "react-bootstrap/Image";
 // import Figure from "react-bootstrap/Figure";
 import circleLogo from "../assets/images/circleLogo.png";
+import { TypeAnimation } from "react-type-animation";
 
 
 function Header() {
@@ -16,7 +17,7 @@ function Header() {
       <div className="hero">
         <div className="container">
           <Navbar expand="lg" variant="dark">
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="/Header">
               <img
                 src={circleLogo}
                 target="_blank"
@@ -27,62 +28,43 @@ function Header() {
             <Navbar.Toggle aria-controls="navbarCollapse" />
             <Navbar.Collapse id="navbarCollapse">
               <Nav className="main-links has-text-centered">
-                <Nav.Link href="#" className="nav-link">
+                <Nav.Link href="/Header" className="nav-link">
                   Home
                 </Nav.Link>
                 <Nav.Link href="/AboutMe" className="nav-link">
                   About
                 </Nav.Link>
-                <Nav.Link href="#" className="nav-link">
+                <Nav.Link href="Portfolio" className="nav-link">
                   Portfolio
                 </Nav.Link>
-                <Nav.Link href="#" className="nav-link">
+                <Nav.Link href="Resume" className="nav-link">
                   Resume
                 </Nav.Link>
-                <Nav.Link href="#" className="nav-link">
-                  Contact
+                <Nav.Link href="/Contact" className="nav-link">
+                <TypeAnimation
+                sequence={[
+                  "Concat",
+                  1000,
+                  "Contact",
+                  1000,
+                 
+                ]}
+                speed={50}
+                repeat={0}
+               
+              />
                 </Nav.Link>
                 
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <div className="hero-heading">
-            <h1> ... </h1>
-            <div className="hero-sub-title mt-5">
-              <a href="#" className="text-white">
-                <i className="fa fa-play-circle"></i>Stacker.
-              </a>
-              <a href="#" className="text-white">
-                <i className="fa fa-play-circle"></i>Clicker.
-              </a>
-              <a href="#" className="text-white">
-                <i className="fa fa-play-circle"></i>Crooner.
-              </a>
-              <a href="#" className="text-white">
-                <i className="fa fa-play-circle"></i>Story Teller.
-              </a>
-            </div>
-          </div>
+          
         </div>
       </div>
     </header>
   );
 }
 
-// function Section() {
-//   return (
-//     <section>
-//       <div className="p-3 mt-5 text-center">
-//         <iframe
-//           src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fewebdesigns%2F&width=450&layout=standard&action=like&size=small&show_faces=true"
-//           width="450"
-//           height="80"
-//           style={{ border: "none", overflow: "hidden" }}
-//         ></iframe>
-//       </div>
-//     </section>
-//   );
-// }
 
 export default function App() {
   return (
